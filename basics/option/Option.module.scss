@@ -1,0 +1,8 @@
+// shared/components/bunny-ui/basics/option/Option.module.scss
+
+.option {
+
+}
+
+// In CSS, order affects style overrides, so sharing must be introduced at the bottom
+@import "../common.module";

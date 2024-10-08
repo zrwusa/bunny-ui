@@ -1,0 +1,6 @@
+.label {
+  @apply inline-block mb-2 font-medium;
+}
+
+// In CSS, order affects style overrides, so sharing must be introduced at the bottom
+@import "../common.module";

@@ -1,0 +1,6 @@
+.tbody {
+  @apply bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700;
+}
+
+// In CSS, order affects style overrides, so sharing must be introduced at the bottom
+@import "../common.module";

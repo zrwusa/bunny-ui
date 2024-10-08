@@ -1,0 +1,7 @@
+
+.td {
+  @apply p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white;
+}
+
+// In CSS, order affects style overrides, so sharing must be introduced at the bottom
+@import "../common.module";

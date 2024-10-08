@@ -1,0 +1,7 @@
+
+.tr {
+  @apply hover:bg-gray-100 dark:hover:bg-gray-700;
+}
+
+// In CSS, order affects style overrides, so sharing must be introduced at the bottom
+@import "../common.module";

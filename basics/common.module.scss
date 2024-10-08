@@ -1,0 +1,468 @@
+// shared/components/bunny-ui/basics/common.module.scss
+
+.bg-primary {
+  @apply bg-sky-600;
+}
+
+.bg-primary__hover {
+  @apply hover:bg-sky-500;
+}
+
+.text-primary {
+  @apply text-sky-600;
+}
+
+.bg-secondary {
+  @apply bg-violet-600;
+}
+
+.bg-secondary__hover {
+  @apply hover:bg-violet-500
+}
+
+.text-secondary {
+  @apply text-violet-600;
+}
+
+.bg-accent {
+  @apply bg-emerald-600;
+}
+
+.bg-accent__hover {
+  @apply hover:bg-emerald-500
+}
+
+.text-accent {
+  @apply text-emerald-600;
+}
+
+.bg-error {
+  @apply bg-red-600;
+}
+
+.bg-error__hover {
+  @apply hover:bg-red-500
+}
+
+.text-error {
+  @apply text-red-600;
+}
+
+.bg-warning {
+  @apply bg-orange-600;
+}
+
+.bg-warning__hover {
+  @apply hover:bg-orange-500
+}
+
+.text-warning {
+  @apply text-orange-600;
+}
+
+.border-default {
+  @apply border border-gray-300;
+}
+
+.border-primary {
+  @apply border border-sky-300;
+}
+
+.border-secondary {
+  @apply border border-violet-300;
+}
+
+.border-accent {
+  @apply border border-emerald-300
+}
+
+.border-error {
+  @apply border border-red-300
+}
+
+.border-warning {
+  @apply border border-orange-300
+}
+
+
+// Radio、Link、Checkbox、Radio、Switch
+
+.interactive {
+  @apply inline-flex items-center justify-center;
+}
+
+.interactive-primary {
+  @apply bg-primary;
+  @apply bg-primary__hover;
+  @apply text-white;
+}
+
+.interactive-secondary {
+  @apply bg-secondary;
+  @apply bg-secondary__hover;
+  @apply text-white;
+}
+
+.interactive-accent {
+  @apply bg-accent;
+  @apply bg-accent__hover;
+  @apply text-white;
+}
+
+.interactive-error {
+  @apply bg-error;
+  @apply bg-error__hover;
+  @apply text-white;
+}
+
+.interactive-warning {
+  @apply bg-warning;
+  @apply bg-warning__hover;
+  @apply text-white;
+}
+
+.padding-sm {
+  @apply px-3 py-1;
+}
+
+.padding-md {
+  @apply px-4 py-2;
+}
+
+.padding-lg {
+  @apply px-6 py-3;
+}
+
+.padding-xl {
+  @apply px-8 py-4;
+}
+
+.padding-xxl {
+  @apply px-12 py-6;
+}
+
+.interactive-sm {
+  @apply padding-sm;
+  @apply text-sm rounded-sm;
+}
+
+.interactive-md {
+  @apply padding-md;
+  @apply text-base rounded-md;
+}
+
+.interactive-lg {
+  @apply padding-lg;
+  @apply text-lg rounded-lg;
+}
+
+.interactive-xl {
+  @apply padding-xl;
+  @apply text-xl rounded-xl;
+}
+
+.interactive-xxl {
+  @apply padding-xxl;
+  @apply text-2xl rounded-2xl;
+}
+
+.bg-disable {
+  @apply bg-gray-300;
+}
+
+.bg-disable__hover {
+  @apply hover:bg-gray-300;
+}
+
+.text-disable {
+  @apply text-gray-500;
+}
+
+.cursor-disable {
+  @apply cursor-not-allowed;
+}
+
+.interactive-disable {
+  @apply bg-disable;
+  @apply bg-disable__hover;
+  @apply cursor-disable;
+}
+
+.interactive-focus {
+  @apply focus:ring-4 focus:ring-gray-200;
+}
+
+// link
+.interactive-typography {
+  @apply inline-flex items-center justify-center;
+  @apply bg-transparent hover:bg-transparent;
+}
+
+.interactive-typography-primary {
+  @apply text-primary;
+}
+
+.interactive-typography-secondary {
+  @apply text-secondary;
+}
+
+.interactive-typography-accent {
+  @apply text-accent;
+}
+
+.interactive-typography-error {
+  @apply text-error;
+}
+
+.interactive-typography-warning {
+  @apply text-warning;
+}
+
+.interactive-typography-sm {
+  @apply padding-sm;
+  @apply text-sm rounded-sm;
+}
+
+.interactive-typography-md {
+  @apply padding-md;
+  @apply text-base rounded-md;
+}
+
+.interactive-typography-lg {
+  @apply padding-lg;
+  @apply text-lg rounded-lg;
+}
+
+.interactive-typography-xl {
+  @apply padding-xl;
+  @apply text-xl rounded-xl;
+}
+
+.interactive-typography-xxl {
+  @apply padding-xxl;
+  @apply text-2xl rounded-2xl;
+}
+
+.interactive-typography-disable {
+  @apply bg-disable;
+  @apply bg-disable__hover;
+  @apply cursor-disable;
+}
+
+.interactive-typography-focus {
+  @apply focus:underline focus:underline-offset-4;
+}
+
+//Container: Card、Table、Modal、Box、Container、Form
+.container {
+  @apply p-2;
+  @apply rounded-md;
+  @apply bg-white;
+  @apply border-default;
+}
+
+.container-primary {
+  @apply border-default;
+}
+
+.container-secondary {
+  @apply border-secondary;
+}
+
+.container-accent {
+  @apply border-accent;
+}
+
+.container-error {
+  @apply border-error;
+}
+
+.container-warning {
+  @apply border-warning;
+}
+
+.container-sm {
+  @apply p-2;
+  @apply rounded-sm;
+}
+
+.container-md {
+  @apply p-4;
+  @apply rounded-md;
+}
+
+.container-lg {
+  @apply p-6;
+  @apply rounded-lg;
+}
+
+.container-xl {
+  @apply p-8;
+  @apply rounded-xl;
+}
+
+.container-xxl {
+  @apply p-12;
+  @apply rounded-2xl;
+}
+
+.container-disable {
+  @apply cursor-disable;
+}
+
+
+// Typography: form label, prompt information
+.typography {
+  @apply bg-transparent hover:bg-transparent;
+}
+
+.typography-primary {
+  @apply text-primary;
+}
+
+.typography-secondary {
+  @apply text-secondary;
+}
+
+.typography-accent {
+  @apply text-accent;
+}
+
+.typography-error {
+  @apply text-error;
+}
+
+.typography-warning {
+  @apply text-warning;
+}
+
+.typography-sm {
+  @apply text-sm;
+}
+
+.typography-md {
+  @apply text-base;
+}
+
+.typography-lg {
+  @apply text-lg;
+}
+
+.typography-xl {
+  @apply text-xl;
+}
+
+.typography-xxl {
+  @apply text-2xl;
+}
+
+.typography-disable {
+  @apply text-disable;
+  @apply cursor-disable;
+}
+
+// Input、Textarea、Select
+.form {
+  @apply p-2 rounded-md border;
+  @apply bg-white;
+  @apply border-default;
+}
+
+.form-primary {
+  @apply border-primary;
+}
+
+.form-secondary {
+  @apply border-secondary;
+}
+
+.form-accent {
+  @apply border-accent;
+}
+
+.form-error {
+  @apply border-error;
+}
+
+.form-warning {
+  @apply border-warning;
+}
+
+.form-sm {
+  @apply padding-sm;
+  @apply text-sm;
+  @apply rounded-sm;
+}
+
+.form-md {
+  @apply padding-md;
+  @apply text-base;
+  @apply rounded-md;
+}
+
+.form-lg {
+  @apply padding-lg;
+  @apply text-lg;
+  @apply rounded-lg;
+}
+
+.form-xl {
+  @apply padding-xl;
+  @apply text-xl;
+  @apply rounded-2xl;
+}
+
+.form-xxl {
+  @apply padding-xxl;
+  @apply text-2xl;
+  @apply rounded-2xl;
+}
+
+.form-disable {
+  @apply bg-disable;
+  @apply bg-disable__hover;
+  @apply cursor-disable;
+}
+
+// Alert、Badge、Notification、Progress、Toast
+.status-primary {
+
+}
+
+// Section、Grid、Flex、Wrapper
+.layout {
+}
+
+.layout-primary {
+}
+
+.layout-secondary {
+}
+
+.layout-accent {
+}
+
+.layout-error {
+}
+
+.layout-warning {
+}
+
+.layout-sm {
+}
+
+.layout-md {
+}
+
+.layout-lg {
+}
+
+.layout-xl {
+}
+
+.layout-xxl {
+}
+
+.layout-disable {
+  @apply cursor-disable;
+}

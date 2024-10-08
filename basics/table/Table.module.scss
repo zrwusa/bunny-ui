@@ -1,0 +1,6 @@
+.table {
+  @apply min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-600;
+}
+
+// In CSS, order affects style overrides, so sharing must be introduced at the bottom
+@import "../common.module";

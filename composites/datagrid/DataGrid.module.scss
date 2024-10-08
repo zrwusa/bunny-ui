@@ -1,0 +1,43 @@
+.headerCell {
+  @apply p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400;
+}
+
+.checkboxCell {
+  @apply w-4 p-4;
+}
+
+.checkboxInput {
+  @apply w-4 h-4 border-gray-300 rounded bg-gray-50 dark:bg-gray-700 dark:border-gray-600;
+}
+
+.checkboxLabel {
+  @apply sr-only;
+}
+
+.productName {
+  @apply p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400;
+}
+
+.productNameHeader {
+  @apply text-base font-semibold text-gray-900 dark:text-white;
+}
+
+.descriptionCell {
+  @apply max-w-sm p-4 overflow-hidden text-base font-normal text-gray-500 truncate xl:max-w-xs dark:text-gray-400;
+}
+
+.actionsCell {
+  @apply p-4 space-x-2 whitespace-nowrap;
+}
+
+.actionButton {
+  @apply bg-red-500 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg;
+}
+
+.updateButton {
+  @apply bg-sky-600 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800;
+}
+
+.deleteButton {
+  @apply bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900;
+}

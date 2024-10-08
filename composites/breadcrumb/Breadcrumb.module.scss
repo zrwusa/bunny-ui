@@ -1,0 +1,28 @@
+// Breadcrumb.module.scss
+.breadcrumb {
+  @apply flex mb-5;
+}
+
+.breadcrumbList {
+  @apply inline-flex items-center space-x-1 text-sm font-medium md:space-x-2;
+}
+
+.breadcrumbItem {
+  @apply inline-flex items-center;
+}
+
+.link {
+  @apply inline-flex items-center text-gray-700 hover:text-blue-500 dark:text-gray-300 dark:hover:text-white;
+}
+
+.icon {
+  @apply w-5 h-5 mr-2.5;
+}
+
+.divider {
+  @apply w-6 h-6 text-gray-400;
+}
+
+.currentPage {
+  @apply ml-1 text-gray-400 md:ml-2 dark:text-gray-500;
+}

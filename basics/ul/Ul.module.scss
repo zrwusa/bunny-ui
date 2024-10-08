@@ -1,0 +1,6 @@
+.ul {
+  @apply mb-6 divide-y divide-gray-200 dark:divide-gray-700;
+}
+
+/* Import shared styles at the bottom to ensure they are properly applied */
+@import "../common.module";

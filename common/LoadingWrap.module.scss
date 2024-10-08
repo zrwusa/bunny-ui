@@ -1,0 +1,11 @@
+.loadingWrap {
+  @apply relative opacity-50;
+}
+
+.inheritAll {
+  //@apply m-inherit p-inherit flex-inherit items-inherit justify-inherit w-inherit h-inherit;
+}
+
+.loadingIcon {
+  @apply absolute inset-0 m-auto;
+}

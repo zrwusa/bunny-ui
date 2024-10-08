@@ -1,0 +1,35 @@
+
+.container {
+  @apply relative inline-block;
+}
+
+.avatar {
+  @apply rounded-full object-cover cursor-pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e8f0;
+}
+
+.defaultAvatar {
+  width: 100%;
+  height: 100%;
+}
+
+.small {
+  @apply w-8 h-8;
+}
+
+.medium {
+  @apply w-12 h-12;
+}
+
+.large {
+  @apply w-16 h-16;
+}
+
+.dropdown {
+  @apply absolute mt-2 p-2 bg-white border border-gray-300 rounded shadow-lg;
+  min-width: 150px;
+  z-index: 10;
+}

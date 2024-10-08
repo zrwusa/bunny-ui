@@ -1,0 +1,146 @@
+// shared/components/bunny-ui/basics/switch/Switch.module.scss
+
+@import "../common.module";
+
+.interactive-switch {
+  @apply inline-flex items-center cursor-pointer relative;
+  & .master {
+    @apply hidden;
+  }
+
+  & .slider {
+    @apply block relative;
+    @apply w-12 h-6;
+    @apply rounded-full;
+    @apply transition duration-200 ease-in-out;
+    @apply bg-white;
+    @apply border-default;
+  }
+
+  & .slider::before {
+    @apply absolute;
+    @apply w-4 h-4;
+    @apply bg-gray-300;
+    @apply rounded-full;
+    @apply left-1 top-0.5;
+    @apply transition-all duration-200 ease-in-out;
+    content: "";
+  }
+}
+
+.interactive-switch-primary {
+  & > input:checked + .slider {
+    @apply bg-primary;
+    @apply bg-primary__hover;
+  }
+}
+
+.interactive-switch-secondary {
+  & > input:checked + .slider {
+    @apply bg-secondary;
+    @apply bg-secondary__hover;
+  }
+}
+
+.interactive-switch-accent {
+  & > input:checked + .slider {
+    @apply bg-accent;
+    @apply bg-accent__hover;
+  }
+}
+
+.interactive-switch-error {
+  & > input:checked + .slider {
+    @apply bg-error;
+    @apply bg-error__hover;
+  }
+}
+
+.interactive-switch-warning {
+  & > input:checked + .slider {
+    @apply bg-warning;
+    @apply bg-warning__hover;
+  }
+}
+
+.interactive-switch-sm {
+  & > .slider {
+    @apply w-9 h-5;
+    &::before {
+      @apply w-3 h-3 left-1 top-1;
+    }
+  }
+
+  & > input:checked + .slider::before {
+    @apply transform translate-x-4;
+    @apply bg-white;
+  }
+}
+
+.interactive-switch-md {
+  & > .slider {
+    @apply w-12 h-6;
+    &::before {
+      @apply w-4 h-4 left-1 top-1;
+    }
+  }
+
+  & > input:checked + .slider::before {
+    @apply transform translate-x-6;
+    @apply bg-white;
+  }
+}
+
+.interactive-switch-lg {
+  & > .slider {
+    @apply w-16 h-8;
+    &::before {
+      @apply w-5 h-5 left-1.5 top-1.5;
+    }
+  }
+
+  & > input:checked + .slider::before {
+    @apply transform translate-x-8;
+    @apply bg-white;
+  }
+}
+
+.interactive-switch-xl {
+  & > .slider {
+    @apply w-20 h-10;
+    &::before {
+      @apply w-6 h-6 left-2 top-2;
+    }
+  }
+
+  & > input:checked + .slider::before {
+    @apply transform translate-x-10;
+    @apply bg-white;
+  }
+}
+
+.interactive-switch-xxl {
+  & > .slider {
+    @apply w-24 h-12;
+    &::before {
+      @apply w-8 h-8 left-2 top-2;
+    }
+  }
+
+  & > input:checked + .slider::before {
+    @apply transform translate-x-12;
+    @apply bg-white;
+  }
+}
+
+.interactive-switch-disable {
+  & > .slider {
+    @apply bg-gray-300;
+    @apply cursor-disable;
+  }
+}
+
+.interactive-switch-focus {
+  @apply interactive-focus;
+}
+

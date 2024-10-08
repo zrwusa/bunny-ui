@@ -1,0 +1,17 @@
+.h6 {
+  @apply font-bold text-xs; // Default styling for h6
+}
+
+.primary {
+  @apply text-sky-100; // Assuming you have defined these styles in your Tailwind configuration
+}
+
+.secondary {
+  @apply text-violet-100;
+}
+
+.accent {
+  @apply text-emerald-100;
+}
+
+@import "../common.module"; // Import shared styles if needed
